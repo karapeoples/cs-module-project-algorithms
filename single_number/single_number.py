@@ -4,8 +4,8 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
-
-    pass
+    #!SEARCH (Find Single Number in an array of duplicates of duplicates python) found this formula which seems to be a constant time solution.
+    return 2*sum(set(arr)) - sum(arr)
 
 
 if __name__ == '__main__':
